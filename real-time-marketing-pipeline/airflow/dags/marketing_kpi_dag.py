@@ -56,6 +56,7 @@ with DAG(
             password=os.getenv("REDSHIFT_PASSWORD"),
             host=os.getenv("REDSHIFT_HOST"),
             port=os.getenv("REDSHIFT_PORT", 5439)
+            
         )
 
         cursor = conn.cursor()
